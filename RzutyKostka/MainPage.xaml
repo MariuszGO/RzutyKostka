@@ -8,6 +8,14 @@
         <Label Text="Gra w kości. Autor 6010110001"/>
         <Button Text="RZUĆ KOŚĆMI" WidthRequest="150"/>
 
+        <HorizontalStackLayout HorizontalOptions="Center">
+        <Image Source="pytajnik.png" WidthRequest="60" Margin="5"/>
+            <Image Source="pytajnik.png" WidthRequest="60" Margin="5"/>
+            <Image Source="pytajnik.png" WidthRequest="60" Margin="5" />
+            <Image Source="pytajnik.png" WidthRequest="60" Margin="5" />
+            <Image Source="pytajnik.png" WidthRequest="60" Margin="5" />
+        </HorizontalStackLayout>
+
 
 
     </StackLayout>
