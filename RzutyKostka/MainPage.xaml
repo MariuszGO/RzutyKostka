@@ -15,8 +15,8 @@
             <Image x:Name="z4" Source="pytajnik.png" WidthRequest="60" Margin="5" />
             <Image x:Name="z5" Source="pytajnik.png" WidthRequest="60" Margin="5" />
         </HorizontalStackLayout>
-        <Label Text="Wynik losowania: " />
-        <Label Text="Wynik gry: " />
+        <Label x:Name="wynik_losowania" Text="Wynik losowania: " />
+        <Label x:Name="wynik_gry" Text="Wynik gry: " />
         <Button Text="RESETUJ WYNIK" WidthRequest="150"/>
     </StackLayout>
   
