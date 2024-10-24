@@ -1,9 +1,11 @@
-﻿namespace RzutyKostka
+﻿using System;
+
+namespace RzutyKostka
 {
     public partial class MainPage : ContentPage
     {
         int count = 0;
-
+        int suma_calosc = 0;
         public MainPage()
         {
             InitializeComponent();
@@ -16,7 +18,7 @@
         {
             Random los = new Random();
             int [] tab = new int [5];
-            int suma_calosc = 0;
+            
             int suma_gry = 0;
 
 
@@ -33,10 +35,21 @@
             z3.Source = ImageSource.FromFile($"z{tab[2]}.png");
             z4.Source = ImageSource.FromFile($"z{tab[3]}.png");
             z5.Source = ImageSource.FromFile($"z{tab[4]}.png");
+            
 
 
 
+            wynik_losowania.Text = "Wynik lsowania: " + Convert.ToString(suma_gry);
+            wynik_gry.Text = "Wynik gry: " + suma_calosc;
         }
+
+
+        private void Resetuj(object sender, EventArgs e)
+        {
+            wynik_losowania.Text = "Wynik lsowania: " + "0";
+            wynik_gry.Text = "Wynik gry: " + "0";
+        }
+
     }
 
 }

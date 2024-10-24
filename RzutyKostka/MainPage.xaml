@@ -1,23 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RzutyKostka.MainPage">
+             x:Class="RzutyKostka.MainPage"
+             BackgroundColor="#F5F5DC"
+             >
 
 
     <StackLayout>
-        <Label Text="Gra w kości. Autor 6010110001"/>
-        <Button Text="RZUĆ KOŚĆMI" WidthRequest="150" Clicked="Button_Clicked" />
+        <Label   TextColor="white" Background="#A52A2A" Text="Gra w kości. Autor 6010110001" FontSize="Large"/>
+        <Button   BackgroundColor="#D2691E" Text="RZUĆ KOŚĆMI" WidthRequest="150" Clicked="Button_Clicked" />
 
-        <HorizontalStackLayout HorizontalOptions="Center">
-            <Image x:Name="z1" Source="pytajnik.png" WidthRequest="60" Margin="5"/>
-            <Image x:Name="z2" Source="pytajnik.png" WidthRequest="60" Margin="5"/>
-            <Image x:Name="z3" Source="pytajnik.png" WidthRequest="60" Margin="5" />
-            <Image x:Name="z4" Source="pytajnik.png" WidthRequest="60" Margin="5" />
-            <Image x:Name="z5" Source="pytajnik.png" WidthRequest="60" Margin="5" />
+        <HorizontalStackLayout Background="White" HorizontalOptions="Center">
+            <Image x:Name="z1" Source="pytajnik.png" WidthRequest="70" Margin="5"/>
+            <Image x:Name="z2" Source="pytajnik.png" WidthRequest="70" Margin="5"/>
+            <Image x:Name="z3" Source="pytajnik.png" WidthRequest="70" Margin="5" />
+            <Image x:Name="z4" Source="pytajnik.png" WidthRequest="70" Margin="5" />
+            <Image x:Name="z5" Source="pytajnik.png" WidthRequest="70" Margin="5" />
         </HorizontalStackLayout>
-        <Label x:Name="wynik_losowania" Text="Wynik losowania: " />
-        <Label x:Name="wynik_gry" Text="Wynik gry: " />
-        <Button Text="RESETUJ WYNIK" WidthRequest="150"/>
+        <Label  x:Name="wynik_losowania" Text="Wynik losowania: " />
+        <Label  x:Name="wynik_gry" Text="Wynik gry: " />
+        <Button  Background="#D2691E" Text="RESETUJ WYNIK" WidthRequest="150" Clicked="Resetuj"/>
     </StackLayout>
   
 
