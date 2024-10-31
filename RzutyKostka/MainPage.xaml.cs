@@ -48,6 +48,7 @@ namespace RzutyKostka
         {
             wynik_losowania.Text = "Wynik lsowania: " + "0";
             wynik_gry.Text = "Wynik gry: " + "0";
+            suma_calosc = 0;
         }
 
     }
